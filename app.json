@@ -1,0 +1,10 @@
+{
+  "name": "project-showcase",
+  "description": "My awesome Rails app for showcasing developer projects, running on Dokku!",
+  "keywords": ["dokku", "rails"],
+  "scripts": {
+    "dokku": {
+      "postdeploy": "bundle exec rails db:migrate"
+    }
+  }
+}
