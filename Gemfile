@@ -54,3 +54,8 @@ group :test do
   gem "rspec-rails", "~> 6.0"
 end
 
+
+gem "image_processing", "~> 1.12"
+
+gem "aws-sdk-s3", "~> 1.119", require: false
+
