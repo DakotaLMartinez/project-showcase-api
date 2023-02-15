@@ -86,7 +86,6 @@ GEM
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
-    byebug (11.1.3)
     concurrent-ruby (1.2.0)
     crass (1.0.6)
     date (3.3.3)
@@ -241,7 +240,6 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk-s3 (~> 1.119)
   bootsnap
-  byebug (~> 11.1)
   debug
   devise
   devise-jwt
