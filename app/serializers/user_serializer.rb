@@ -9,4 +9,11 @@ class UserSerializer
   attribute :avatar_url do |user|
     Rails.application.routes.url_helpers.rails_blob_url(user.avatar) if user.avatar.attached?
   end
+
+  attribute :projects do |user|
+    user.projects.map do |project|
+      ProjectSerializer.new(project).serializable_hash[:data][:attributes]
+    end
+  end
+  
 end

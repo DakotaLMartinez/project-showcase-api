@@ -7,6 +7,8 @@ class User < ApplicationRecord
 
   has_one_attached :avatar
 
+  has_many :projects, :dependent => :destroy
+
   validates :linkedin_url, url: { host: /linkedin\.com\z/ }
   validates :github_url, url: { host: /github\.com\z/}
   validates :twitter_url, url: { host: /twitter\.com\z/}

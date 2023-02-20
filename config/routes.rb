@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :projects
   get 'current_user', to: 'current_user#index'
   patch '/profile', to: 'current_user#update'
   devise_for :users, path: '', path_names: {
