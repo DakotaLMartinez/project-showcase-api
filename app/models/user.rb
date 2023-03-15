@@ -12,4 +12,8 @@ class User < ApplicationRecord
   validates :linkedin_url, url: { host: /linkedin\.com\z/ }
   validates :github_url, url: { host: /github\.com\z/}
   validates :twitter_url, url: { host: /twitter\.com\z/}
+
+  def purge_avatar=(arg=true)
+    self.avatar.purge
+  end
 end

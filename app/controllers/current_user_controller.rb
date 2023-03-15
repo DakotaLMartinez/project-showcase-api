@@ -12,6 +12,6 @@ class CurrentUserController < ApplicationController
   private
 
   def user_params
-    params.permit(:avatar, :name, :email, :hide_email, :linkedin_url, :github_url, :twitter_url)
+    params.permit(:avatar, :purge_avatar, :name, :email, :hide_email, :linkedin_url, :github_url, :twitter_url)
   end
 end
